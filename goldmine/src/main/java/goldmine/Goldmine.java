@@ -18,7 +18,6 @@ public class Goldmine {
 
 		List<Point> list = new ArrayList<>();
 
-		int row = 0;
 		Point point = new Point();
 		for (int col = 0; col < matrix[0].length; col++) {
 			point = findMaxRowForCurrentColumnAndPreviousRow(matrix, col, point.row);
