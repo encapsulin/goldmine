@@ -41,7 +41,6 @@ public class Goldmine {
 
 			if (previousRow == null || Math.abs(previousRow - iRow) <= 1)
 				if (point.value < row[currentColumn]) {
-
 					point.value = row[currentColumn];
 					point.col = currentColumn;
 					point.row = iRow;
