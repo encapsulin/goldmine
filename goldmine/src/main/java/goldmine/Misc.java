@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Parser {
+public class Misc {
 
-		public static int[][] readMatrixFromFile(String fn) {
+	public static int[][] readMatrixFromFile(String fn) {
 
 		int[][] matrix = null;
 
@@ -37,5 +37,14 @@ public class Parser {
 			return new int[][] { { 0 } };
 	}
 
+	public static void show(int[][] matrix) {
+		System.out.println();
+		for (int[] row : matrix) {
+			for (int value : row)
+				System.out.printf("%d ", value);
+			System.out.println();
+		}
+
+	}
 
 }

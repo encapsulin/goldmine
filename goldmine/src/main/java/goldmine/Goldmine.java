@@ -1,40 +1,20 @@
 package goldmine;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Goldmine {
 
 	public static void main(String[] args) {
-//		System.out.println("start");
-
 		System.out.println(solve("matrix.txt") == 12);
-		
 		System.out.println(solve("matrix4.txt") == 83);
-
 		System.out.println(solve("matrix2.txt") == 32);
-		
 		System.out.println(solve("matrix3.txt") == 16);
-
-//		System.out.println("stop");
 	}
 	
-	public static void show(int[][] matrix) {
-		System.out.println();
-		for (int[] row : matrix) {
-			for (int value : row)
-				System.out.printf("%d ", value);
-			System.out.println();
-		}
-
-	}
-
 	public static int solve(String fileName) {
-		int[][] matrix = Parser.readMatrixFromFile(fileName);
-		show(matrix);
+		int[][] matrix = Misc.readMatrixFromFile(fileName);
+		Misc.show(matrix);
 
 		List<Point> list = new ArrayList<>();
 		int cols = matrix[0].length;
