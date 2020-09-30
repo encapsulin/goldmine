@@ -17,8 +17,6 @@ public class Goldmine {
 		Misc.show(matrix);
 
 		List<Point> list = new ArrayList<>();
-		int cols = matrix[0].length;
-		int rows = matrix.length;
 
 		int row = 0;
 		Point point = new Point();
