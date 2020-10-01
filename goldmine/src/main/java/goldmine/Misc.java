@@ -9,7 +9,7 @@ import java.util.List;
 public class Misc {
 
 	public static int[][] readMatrixFromFile(String fn) {
-		System.out.println(fn);
+		System.out.print("\n"+fn);
 		int[][] matrix = null;
 
 		try {
