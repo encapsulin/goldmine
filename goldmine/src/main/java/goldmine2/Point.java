@@ -1,9 +1,9 @@
 package goldmine2;
 
 public class Point {
-	public Integer col = 0;
-	public Integer row = 0 ;
-	public Integer value = 0;
+	public int col = 0;
+	public int row = 0 ;
+	public int value = 0;
 
 	@Override
 	public String toString() {
