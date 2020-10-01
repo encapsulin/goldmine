@@ -7,7 +7,7 @@ public class Point {
 
 	@Override
 	public String toString() {
-		return "(" + col + "," + row + ")=" + value;
+		return " (" + col + "," + row + "):" + value;
 	}
 
 	public int rowPlus(int i) {		

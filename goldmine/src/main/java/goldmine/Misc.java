@@ -9,7 +9,7 @@ import java.util.List;
 public class Misc {
 
 	public static int[][] readMatrixFromFile(String fn) {
-
+		System.out.println(fn);
 		int[][] matrix = null;
 
 		try {
@@ -31,6 +31,9 @@ public class Misc {
 			System.out.println(e);
 		}
 		// int[][] matrix0 = { { 1, 9, 2, 1 }, { 8, 3, 7, 8 }, { 4, 6, 5, 4 } };
+		
+		Misc.show(matrix);	
+		
 		if (matrix != null)
 			return matrix;
 		else
@@ -46,5 +49,7 @@ public class Misc {
 		}
 
 	}
+	
+	
 
 }
